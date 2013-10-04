@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+ 
+require('colors');
+
+var ip_info = require('./lib/ip_info');
+var promptly = require('promptly');
+var fs = require('fs');
+
+var banner = fs.readFileSync(__dirname + '/logo.txt').toString();
+
+process.stdout.write('\u001B[2J\u001B[0;0f');
+
+console.log(banner.green);
+console.log('Your ip address:', ip_info.yellow, '\n');
+
+console.log('Actions:');
+console.log(' Option 0:'.green + ' Reboot!');
+console.log(' Option 1:'.green + ' Change the Network configuration');
+console.log(' Option 2:'.green + ' Update Auth0');
+
+console.log('\n');
+
+var actions = {
+  '0': require('./lib/reboot'),
+  '1': require('./lib/network_config'),
+  '2': require('./lib/update'),
+};
+
+promptly.prompt('Enter an option:', function (err, option) {
+  var action = actions[option];
+  if (!action) return process.exit(0);
+  action.run(function (err) {
+    if (err) {
+      console.log(err.message);
+    }
+    setTimeout(function(){
+      process.exit(0);
+    }, 20000);
+  });
+});
