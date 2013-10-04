@@ -7,7 +7,7 @@ Auth0's appliance welcome screen.
 
 ## Introduction
 
-We deploy Auth0 to the cloud but we also distribute as an appliance (a virtual machine). We saw in few took the idea from other appliances and here we are sharing our setup.
+We deploy Auth0 to the cloud but we also distribute as an appliance (a virtual machine). We took the idea from other appliances and here we are sharing our setup.
 
 __This guide is only for ubuntu server__.
 
