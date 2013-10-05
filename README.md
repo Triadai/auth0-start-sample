@@ -31,11 +31,11 @@ Fortunately you can tell getty to start something else with the `-l` option:
 exec /sbin/getty -n -l /opt/my-start-app/start-screen -8 38400 tty1
 ~~~
 
-### Generate your ASCI art
+### Generate your ASCII art
 
-There are several ASCI generators you can use to turn your product's name into a bigger and awesome banner. You can also use images to asci converters. 
+There are several ASCII generators you can use to turn your product's name into a bigger and awesome banner. You can also use images to ascii converters. 
 
-TIP: to make the asci even awesome, change the resolution of Ubuntu Server by tweaking grub, edit your `/etc/default/grub` as follows:
+TIP: to make the ascii even awesome, change the resolution of Ubuntu Server by tweaking grub, edit your `/etc/default/grub` as follows:
 
 ~~~
 GRUB_CMDLINE_LINUX_DEFAULT="splash vga=789"
