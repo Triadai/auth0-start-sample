@@ -1,11 +1,8 @@
 {
   "name": "auth0-start",
   "version": "0.0.0",
-  "description": "ERROR: No README.md file found!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Auth0's appliance welcome screen.",
+  "scripts": {},
   "repository": "",
   "author": "",
   "license": "BSD",
@@ -13,10 +10,8 @@
     "colors": "~0.6.2",
     "ip": "~0.1.0",
     "ejs": "~0.8.4",
-    "async": "~0.2.9"
-  },
-  "bin": "./start",
-  "devDependencies": {
+    "async": "~0.2.9",
     "promptly": "~0.2.0"
-  }
+  },
+  "bin": "./start"
 }
