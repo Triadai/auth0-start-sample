@@ -22,7 +22,7 @@ The code in this repository has three pre-configured actions:
 
 ### Edit your /etc/init/tty1.conf
 
-Every tty has an init script, the init script is an upstart job that starts [getty](http://manpages.ubuntu.com/manpages/lucid/man8/getty.8.html). Getty does some cool things and ends up executing `/bin/login`. 
+Every tty has an init script, the init script is an upstart job that starts [getty](http://manpages.ubuntu.com/manpages/lucid/man8/getty.8.html). Getty does some cool things and ends up executing `/bin/login`.
 
 Fortunately, you can tell getty to start something else with the `-l` option:
 
@@ -32,7 +32,7 @@ exec /sbin/getty -n -l /opt/my-start-app/start-screen -8 38400 tty1
 
 ### Generate your _ASCII_ art
 
-All awesome appliances need _ASCII Art__. There are several _ASCII_ generators you can use to turn your product's name and logo into a bigger and great banner. You can also use images to ASCII converters. 
+All awesome appliances need _ASCII Art__. There are several _ASCII_ generators you can use to turn your product's name and logo into a bigger and great banner. You can also use images to ASCII converters.
 
 TIP: to make the ASCII Art even _awesomer_, change the resolution of Ubuntu Server by tweaking grub, edit your `/etc/default/grub` as follows:
 
@@ -42,7 +42,14 @@ GRUB_CMDLINE_LINUX_DEFAULT="splash vga=789"
 
 Then run `sudo update-grub`.
 
+## Issue Reporting
+
+If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+
+## Author
+
+[Auth0](auth0.com)
 
 ## License
 
-MIT 2013 - AUTH10 LLC
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
